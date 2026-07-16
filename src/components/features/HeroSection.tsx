@@ -15,7 +15,7 @@ const slides = [
     cta: "Shop Collection",
     href: "/products?category=festive",
     image: IMAGES.hero[0],
-    bg: "from-[#800020]/70 via-[#800020]/30 to-transparent",
+    bg: "from-[#1A1A1A]/80 via-[#800020]/60 to-[#1A1A1A]/60",
   },
   {
     title: "Summer Essentials",
@@ -23,7 +23,7 @@ const slides = [
     cta: "Explore Now",
     href: "/products?category=summer",
     image: IMAGES.hero[1],
-    bg: "from-[#800020]/60 via-[#B76E79]/20 to-transparent",
+    bg: "from-[#1A1A1A]/80 via-[#B76E79]/50 to-[#1A1A1A]/60",
   },
   {
     title: "New Arrivals",
@@ -31,7 +31,7 @@ const slides = [
     cta: "Shop New In",
     href: "/products?sort=newest",
     image: IMAGES.hero[2],
-    bg: "from-[#1A1A1A]/70 via-[#1A1A1A]/20 to-transparent",
+    bg: "from-[#1A1A1A]/80 via-[#1A1A1A]/60 to-[#1A1A1A]/60",
   },
 ]
 
