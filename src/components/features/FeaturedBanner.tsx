@@ -33,7 +33,7 @@ export function FeaturedBanner() {
             <div className="absolute bottom-10 right-10 w-32 h-32 border border-white/10 rounded-full" />
           </div>
 
-          <div className="relative px-8 py-16 md:px-16 md:py-24 text-center">
+          <div className="relative px-6 py-12 sm:px-8 sm:py-16 md:px-16 md:py-24 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function FeaturedBanner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4"
+              className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4"
             >
               Festive Collection 2025
             </motion.h2>
@@ -72,12 +72,12 @@ export function FeaturedBanner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="flex flex-wrap justify-center gap-4"
+              className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
             >
               <Link href="/products?category=festive">
                 <Button
                   size="lg"
-                  className="bg-white text-[#800020] hover:bg-white/90 rounded-full px-8 h-12 text-base group"
+                  className="bg-white text-[#800020] hover:bg-white/90 rounded-full px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base group w-full sm:w-auto"
                 >
                   Explore Collection
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -87,7 +87,7 @@ export function FeaturedBanner() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 rounded-full px-8 h-12 text-base"
+                  className="border-white/30 text-white hover:bg-white/10 rounded-full px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base w-full sm:w-auto"
                 >
                   View Offers
                 </Button>

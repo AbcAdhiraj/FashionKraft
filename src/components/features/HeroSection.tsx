@@ -119,12 +119,12 @@ export function HeroSection() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="flex flex-wrap gap-4"
+                  className="flex flex-col sm:flex-row gap-3 sm:gap-4"
                 >
                   <Link href={slides[currentSlide].href}>
                     <Button
                       size="lg"
-                      className="bg-white text-[#1A1A1A] hover:bg-white/90 rounded-full px-8 h-12 text-base font-medium group"
+                      className="bg-white text-[#1A1A1A] hover:bg-white/90 rounded-full px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base font-medium group w-full sm:w-auto"
                     >
                       {slides[currentSlide].cta}
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -134,7 +134,7 @@ export function HeroSection() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="border-white/30 bg-transparent text-white hover:bg-white/10 rounded-full px-8 h-12 text-base"
+                      className="border-white/30 bg-transparent text-white hover:bg-white/10 rounded-full px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base w-full sm:w-auto"
                     >
                       Explore New Arrivals
                     </Button>

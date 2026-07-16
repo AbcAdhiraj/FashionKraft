@@ -14,6 +14,7 @@ import {
   X,
   Package,
   LogOut,
+  Home,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -88,6 +89,13 @@ export function Navbar() {
                     </Link>
                   </div>
                   <div className="p-6 space-y-6 overflow-y-auto max-h-[calc(100vh-80px)]">
+                    <Link
+                      href="/"
+                      className="flex items-center gap-3 text-lg text-[#1A1A1A] hover:text-[#800020] transition-colors font-medium"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <Home className="h-5 w-5" /> Home
+                    </Link>
                     {NAV_LINKS.map((link) => (
                       <Link
                         key={link.href}
@@ -209,6 +217,13 @@ export function Navbar() {
 
             {/* Actions */}
             <div className="flex items-center gap-1 md:gap-2">
+              {/* Home */}
+              <Link href="/">
+                <Button variant="ghost" size="icon" className="hover:bg-transparent">
+                  <Home className="h-5 w-5" />
+                </Button>
+              </Link>
+
               {/* Search */}
               <Button
                 variant="ghost"
@@ -256,7 +271,7 @@ export function Navbar() {
 
               {/* Wishlist */}
               <Link href="/wishlist">
-                <Button variant="ghost" size="icon" className="hidden md:flex hover:bg-transparent relative">
+                <Button variant="ghost" size="icon" className="hover:bg-transparent relative">
                   <Heart className="h-5 w-5" />
                   {wishlistItems.length > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#800020] text-white text-[10px] font-bold rounded-full flex items-center justify-center">

@@ -75,12 +75,11 @@ export function CategoryShowcase() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`group relative overflow-hidden rounded-2xl bg-[#F5F0EB] cursor-pointer ${
                 index === 0 || index === 4
-                  ? "md:col-span-2 md:row-span-2"
-                  : ""
+                  ? "md:col-span-2 md:row-span-2 min-h-[280px] md:min-h-[400px]"
+                  : "min-h-[240px] md:min-h-[280px]"
               } ${index === 0 ? "row-span-2" : ""}`}
               style={{
                 aspectRatio: index === 0 || index === 4 ? undefined : "3/4",
-                minHeight: index === 0 || index === 4 ? "400px" : "280px",
               }}
             >
               <Link href={`/products?category=${cat.slug}`}>
